@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio_1_2.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="BlueViolet" 
+               Padding="20" 
+               CornerRadius="0">
+            <Label Text="Ejercicio 1.2" 
+                   HorizontalTextAlignment="Center" 
+                   TextColor="White" 
+                   FontSize="16"
+                   FontFamily=""/>
+        </Frame>
+
+        <Label Text="Nombre" 
+               HorizontalTextAlignment="Start" 
+               TextColor="Black" 
+               FontSize="18" 
+               Padding="10,34,30,0"
+               />
+
+        <Entry x:Name="TNombre"
+               Placeholder="Ingrese Nombre"
+               Keyboard="Text"
+               Margin="0,0,30,0"
+               />
+
+        <Label Text="Apellido" 
+               HorizontalTextAlignment="Start" 
+               TextColor="Black" 
+               FontSize="20" 
+               Padding="10,14,30,0"/>
+
+        <Entry x:Name="TApellidos"
+               Placeholder="Ingrese Apellidos"
+               Keyboard="Text"
+               Margin="0,0,30,0"
+               />
+
+        <Label Text="Edad" 
+               HorizontalTextAlignment="Start" 
+               TextColor="Black" 
+               FontSize="18" 
+               Padding="10,14,30,0"/>
+
+        <Entry x:Name="TEdad"
+               Placeholder="Ingrese Edad"
+               Keyboard="Numeric"
+               Margin="0,0,290,0"
+               />
+        <Label Text="Correo Electronico" 
+               HorizontalTextAlignment="Start" 
+               TextColor="Black" 
+               FontSize="18" 
+               Padding="10,14,30,0"/>
+
+        <Entry x:Name="TCorreo"
+               Placeholder="Ingrese Correo"
+               Keyboard="Email"
+               Margin="0,0,30,0"
+               />
+
+        <Button Text="Enviar Informacion" 
+              x:Name="b_enviar"
+                Clicked="b_enviar_Clicked"
+                TextTransform="None"
+                BackgroundColor="blue"
+                TextColor="White"
+                FontSize="20"
+                FontAttributes="Bold"
+                CornerRadius="5"
+                Padding="10,10,10,10"  
+                Margin="30,10,30,10"                
+                        />
+
+
+    </StackLayout>
+
+</ContentPage>
